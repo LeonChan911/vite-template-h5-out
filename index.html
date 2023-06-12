@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache,no-store,must-revalidate"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta
+      name="format-detection"
+      content="telephone=no,email=no,date=no,address=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta name="robots" content="all" />
+    <meta name="keywords" content="喜马拉雅" />
+    <meta name="description" content="喜马拉雅" />
+    <link rel="icon" href="%VITE_PUBLIC_URL%/favicon.ico" />
+    <link rel="manifest" href="%VITE_PUBLIC_URL%/manifest.json" />
+    <link rel="dns-prefetch" href="//www.ximalaya.com" />
+    <link rel="dns-prefetch" href="//m.ximalaya.com" />
+    <link rel="dns-prefetch" href="//mobile.ximalaya.com" />
+    <link rel="dns-prefetch" href="//api.ximalaya.com" />
+    <link rel="dns-prefetch" href="//passport.ximalaya.com" />
+    <link rel="dns-prefetch" href="//mermaid.ximalaya.com" />
+    <link rel="dns-prefetch" href="//s1.xmcdn.com" />
+    <link rel="dns-prefetch" href="//imagev2.xmcdn.com" />
+    <link rel="dns-prefetch" href="//fdfs.xmcdn.com" />
+    <link rel="dns-prefetch" href="//fdfs.cos.xmcdn.com" />
+    <link rel="dns-prefetch" href="//www.qchannel03.cn" />
+    <title>喜马拉雅</title>
+    <style>
+      .first-screen-placeholder-spinner {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 60px;
+        height: 36px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .first-screen-placeholder-spinner > div {
+        background-color: #f86441;
+        height: 100%;
+        width: 4px;
+        border-radius: 20px;
+        animation: sk-stretchdelay 0.8s linear infinite;
+      }
+
+      .first-screen-placeholder-spinner > .rect1 {
+        -webkit-animation-delay: -0.2s;
+        animation-delay: -0.2s;
+      }
+      .first-screen-placeholder-spinner > .rect2 {
+        -webkit-animation-delay: -0.4s;
+        animation-delay: -0.4s;
+      }
+      .first-screen-placeholder-spinner > .rect3 {
+        -webkit-animation-delay: -0.6s;
+        animation-delay: -0.6s;
+      }
+
+      @-webkit-keyframes sk-stretchdelay {
+        0%,
+        100% {
+          transform: scaleY(1);
+        }
+        50% {
+          transform: scaleY(0.2);
+        }
+      }
+
+      @keyframes sk-stretchdelay {
+        0%,
+        100% {
+          transform: scaleY(1);
+        }
+        50% {
+          transform: scaleY(0.2);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="first-screen-placeholder-spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect3"></div>
+        <div class="rect2"></div>
+        <div class="rect1"></div>
+      </div>
+    </div>
+    <script src="//s1.xmcdn.com/lib/jssdk/last/build/ly.js"></script>
+    <script
+      src="//s1.xmcdn.com/lib/wws-common/last/dist/wx/v-1.4.0.js?v=1571734756827"
+      crossorigin="anonymous"
+    ></script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
